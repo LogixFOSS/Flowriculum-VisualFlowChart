@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class DegreeProgram
+namespace Flowriculum_VisualFlowChart.Data
+{
+    public class DegreeProgram
     {
     }
+}

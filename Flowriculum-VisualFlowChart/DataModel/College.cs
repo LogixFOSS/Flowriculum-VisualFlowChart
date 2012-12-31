@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class College
+namespace Flowriculum_VisualFlowChart.Data
+{
+    public class College
     {
         string collegeName;
         string collegeCodeName;
@@ -43,6 +45,8 @@ public class College
         {
             this.collegeDepartments = department;
         }
-       
+
 
     }
+}
+

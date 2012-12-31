@@ -4,7 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Departments
+namespace Flowriculum_VisualFlowChart.Data
+{
+
+    public class Departments
     {
         string departmentName;
         string departmentCodeName;
@@ -40,3 +43,4 @@ public class Departments
             return listOfProfessor;
         }
     }
+}

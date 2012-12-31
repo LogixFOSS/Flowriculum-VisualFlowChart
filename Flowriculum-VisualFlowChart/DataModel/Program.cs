@@ -4,17 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication4
+///<summary>
+///This class file exists to reflect the initial work done by Lawrence Chua.
+///Don't include this file, and ignore any arising errors in this class.
+///</summary>
+
+
+namespace Flowriculum_VisualFlowChart.Data
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Run Successfully");
-            Console.ReadLine();
+            //Console.WriteLine("Run Successfully");
+            //Console.ReadLine();
         }
     }
-         
+  /*       
     public class Person
     {
          public Name name;
@@ -335,4 +341,5 @@ namespace ConsoleApplication4
     public class DegreeProgram
     {
     }
+   */
 }

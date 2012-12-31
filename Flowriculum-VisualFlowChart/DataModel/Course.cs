@@ -4,7 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Course
+namespace Flowriculum_VisualFlowChart.Data
+{
+
+    public class Course
     {
         string courseCode;
         string courseName;
@@ -52,10 +55,11 @@ public class Course
         {
             return listofPostrequisites;
         }
-        public bool isPassed(Course course,string _grade)
+        public bool isPassed(Course course, string _grade)
         {
             if (string.Compare(_grade, "pass") == 0)
             { return true; }
             return false;
         }
     }
+}
