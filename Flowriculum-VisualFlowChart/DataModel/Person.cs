@@ -6,31 +6,46 @@ using System.Threading.Tasks;
 
 namespace Flowriculum_VisualFlowChart.Data
 {
-    public class Person
+    public abstract class Person
     {
-        public Name name;
+		public enum Gender
+        {
+            Male,
+            Female,
+        }
+		
+		public Name name;
         public int age;
         public Gender gender;
+		
         public void getName()
         {
             name.getFirstName();
             name.getMiddleName();
             name.getLastName();
         }
-        public void setName(string _first, string _middle, string _last)
+		
+        ///<summary>
+		///Sets the full name.
+		///</summary>
+		
+		public void setName(string _first, string _middle, string _last)
         {
             name.setFirstName(_first);
             name.setLastName(_last);
             name.setMiddleName(_middle);
         }
+		
         public int getAge()
         {
             return age;
         }
+		
         public void setAge(int _age)
         {
             age = _age;
         }
+		
         public void setGender(string _gender)
         {
             if (_gender == "male")
@@ -40,11 +55,17 @@ namespace Flowriculum_VisualFlowChart.Data
             else
                 this.gender = 0;
         }
+		
         public Gender getGender()
         {
             return this.gender;
         }
-        public class Name
+		
+        ///<summary>
+		///Contains the full name of the person.
+		///</summary>
+		
+		public class Name
         {
             public string FirstName;
             public string MiddleName;
@@ -73,17 +94,12 @@ namespace Flowriculum_VisualFlowChart.Data
             {
                 LastName = _Name;
             }
-            public string toString()
+            public string toOneString()
             {
-                return FirstName + " " + MiddleName + " " + LastName;
+                return (FirstName + " " + MiddleName + " " + LastName);
             }
 
         }
 
-        public enum Gender
-        {
-            Male,
-            Female,
-        }
     }
 }
